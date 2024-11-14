@@ -1,9 +1,0 @@
-deletar arquivo 
-	rm uptime.py
-	sobe novo 
-
-
-iniciar venv 
-	source venv/bin/activate
-rodar sem fim 
-	nohup python3 -u uptime.py &>> activity.log &

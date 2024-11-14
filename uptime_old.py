@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from discord.ext import commands
 from datetime import datetime
 
-load_dotenv('discord.env', override=True) #Carrega arquivo de chaves
+load_dotenv('keys/discord.env', override=True) #Carrega arquivo de chaves
 
 intents = discord.Intents.all() # Permissões
 intents.message_content=True

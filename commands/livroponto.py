@@ -17,7 +17,7 @@ scope = [
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
-credentials = ServiceAccountCredentials.from_json_keyfile_name("discord-bot-439701-9478347fa2aa.json", scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name("keys/discord-bot-439701-9478347fa2aa.json", scope)
 client = gspread.authorize(credentials)
 sheet = client.open("Livro de Ponto Discord").sheet1
 
