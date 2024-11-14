@@ -124,6 +124,7 @@ celerybeat.pid
 
 # Environments
 *.env
+discord.env
 .venv
 env/
 venv/
