@@ -15,8 +15,9 @@ class Admin(commands.Cog):
             await ctx.send("Você não possui o cargo necessário para executar este comando.", delete_after=5)
             return
         await ctx.send("Saindo!")
-        print("O bot foi desligado pelo discord!")
+        print("O bot foi desligado de forma forçada pelo discord!")
         await self.bot.close()
+        os._exit(0) #Isso aqui UM DIA pode dar RUIM (!!!!)
 
     @commands.command() # Comando só para limpar mensagens (Não vai ficar na versão final)
     @commands.has_permissions(manage_messages=True)
