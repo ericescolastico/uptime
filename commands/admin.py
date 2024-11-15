@@ -18,7 +18,7 @@ class Admin(commands.Cog):
             await ctx.send("Você não possui o cargo necessário para executar este comando.", delete_after=5)
             return
         await ctx.send("Saindo!")
-        print("O bot foi desligado de forma forçada pelo discord!")
+        print("O bot foi desligado de forma forçada pelo discord! TESTETESTETESTE")
 
         await self.bot.close()
 
