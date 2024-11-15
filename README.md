@@ -21,6 +21,7 @@ O bot foi construido de forma **modular**, portanto os comandos e funcionalidade
 - **Linguagem**: Python
 - **Bibliotecas**: `discord.py`, `gspread`, `oauth2client`
 - **Google Sheets API**: Utilizada para armazenar registros de presença dos membros.
+- **VM Google Cloud** Utilizado para manter o bot online.
 
 ## Próximas atualizações (Em breve)
 * Cálculo automático de horas trabalhadas (horas online)
