@@ -1,6 +1,7 @@
 # admin.py - Módulo responsável por comandos administrativos
 
 import discord
+import sys
 from discord.ext import commands
 
 ADMIN_ROLE_ID = 1306412483715661844  # Variável global para o ID do cargo de admin
@@ -17,7 +18,7 @@ class Admin(commands.Cog):
         await ctx.send("Saindo!")
         print("O bot foi desligado de forma forçada pelo discord!")
         await self.bot.close()
-        os._exit(0) #Isso aqui UM DIA pode dar RUIM (!!!!)
+        sys.exit (0) #Isso aqui UM DIA pode dar RUIM (!!!!)
 
     @commands.command() # Comando só para limpar mensagens (Não vai ficar na versão final)
     @commands.has_permissions(manage_messages=True)
