@@ -1,7 +1,9 @@
 # admin.py - Módulo responsável por comandos administrativos
 
 import discord
-import sys
+import os
+import signal
+import asyncio
 from discord.ext import commands
 
 ADMIN_ROLE_ID = 1306412483715661844  # Variável global para o ID do cargo de admin
@@ -17,8 +19,15 @@ class Admin(commands.Cog):
             return
         await ctx.send("Saindo!")
         print("O bot foi desligado de forma forçada pelo discord!")
+
         await self.bot.close()
-        sys.exit (0) #Isso aqui UM DIA pode dar RUIM (!!!!)
+
+         # Aguarda um pouco para garantir que todas as corrotinas sejam finalizadas
+        await asyncio.sleep(1)
+
+        # Encerra o processo atual do Python, o que desativa o ambiente virtual
+        os.kill(os.getpid(), signal.SIGTERM)  # Mata o processo Python
+
 
     @commands.command() # Comando só para limpar mensagens (Não vai ficar na versão final)
     @commands.has_permissions(manage_messages=True)
