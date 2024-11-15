@@ -27,7 +27,9 @@ O bot foi construido de forma **modular**, portanto os comandos e funcionalidade
 * Funções de consultas de horas trabalhadas, lembretes e relatórios.
 
 ## Contribuição e Suporte
-Sinta-se à vontade para abrir issues e pull requests para melhorias ou correções. Toda contribuição é bem-vinda! 😍
+Sinta-se à vontade para abrir issues e pull requests para melhorias ou correções. Toda contribuição é bem-vinda! 💖
+
+Caso precise, também pode entrar em contato comigo! 
 ___
 
 # Eric Escolástico (Autor)
